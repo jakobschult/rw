@@ -1,0 +1,11 @@
+{% include 'partials/header.html' %}
+<div id="navigation-spacer"></div>
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <h5>Thank you {{order.name}} for confirming! </h5>
+        <p>Come and repair your bike with us on the {{order.date}}!</p>
+    </div>
+    {% include 'website/segments/location.html' %}
+</div>
+
+{% include 'partials/footer.html' %}

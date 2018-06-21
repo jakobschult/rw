@@ -1,0 +1,75 @@
+{% include 'partials/header.html' %}
+<div id="navigation-spacer"></div>
+<div class="container">
+    <div class="row">
+
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            {% if messages %}
+            <div class="alert alert-success text-center" role="alert">
+                {% for message in messages %}
+                <h5>{{ message }}</h5>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="card shadow text-center" id="add-event-form">
+                <div class="card-header" id="card-header">
+                    <h5>Signup for waiting list</h5>
+                </div>
+                <div class="card-body">
+                    <form action="{% url 'add_order' %}" method="post">
+                        {% csrf_token %}
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name"/>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="E-mail"/>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" name="phone" id="phone"
+                                       placeholder="Phone"/>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" name="bikes" id="bikes"
+                                       placeholder="How many bikes do you need?"/>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                <textarea class="form-control" rows="3" name="note" id="note"
+                          placeholder="Do you have any comments or wishes?"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <button type="submit" class="btn btn-success">I need a bike</button>
+                            </div>
+                        </div>
+                        {% csrf_token %}
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+{% include 'partials/footer.html' %}

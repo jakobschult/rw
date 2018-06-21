@@ -1,0 +1,41 @@
+{% include 'partials/header.html' %}
+<div id="navigation-spacer"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card shadow" id="add-event-form">
+                <div class="card-header" id="card-header">
+                    <h5>Create new collection</h5>
+                </div>
+                <div class="card-body">
+                    <form action="{% url 'add_collection' %}" method="post">
+                        {% csrf_token %}
+                        <div class="form_row">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    {{ collection_form.date }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    {{ collection_form.capacity }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-success">Create</button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+{% include 'partials/footer.html' %}

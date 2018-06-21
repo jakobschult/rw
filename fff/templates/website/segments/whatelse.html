@@ -1,0 +1,24 @@
+{% load static i18n %}
+<div id="whatelse">
+    <div class="container">
+        <h2>{% trans 'whatelse_title' %}</h2>
+        <p>{% trans 'whatelse_text' %} </p>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <img src="{% static 'images/fahrradtour.png' %}" class="img-circle" alt="">
+                <h4>{% trans 'whatelse_tours_title' %}</h4>
+                <p>{% trans 'whatelse_tours_text' %}</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <img src="{% static 'images/schrauberevent.jpg' %}" class="img-circle" alt="">
+                <h4>{% trans 'whatelse_events_title' %}</h4>
+                <p>{% trans 'whatelse_events_text' %}</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <img src="{% static 'images/fahrradstadtberlin.png' %}" class="img-circle" alt="">
+                <h4>{% trans 'whatelse_awards_title' %}</h4>
+                <p>{% trans 'whatelse_awards_text' %}</p>
+            </div>
+        </div>
+    </div>
+</div>

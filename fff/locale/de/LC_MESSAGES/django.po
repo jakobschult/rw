@@ -1,0 +1,629 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-18 15:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\fff\forms.py:23
+msgid "bikedonation_form_name_placeholder"
+msgstr "Vor- und Nachname"
+
+#: .\fff\forms.py:25
+msgid "bikedonation_form_email_placeholder"
+msgstr "Email-Adresse"
+
+#: .\fff\forms.py:27
+msgid "bikedonation_form_phone_placeholder"
+msgstr "Telefonnummer"
+
+#: .\fff\forms.py:29
+msgid "bikedonation_form_address_placeholder"
+msgstr "Straße und Hausnummer"
+
+#: .\fff\forms.py:31
+msgid "bikedonation_form_zip_placeholder"
+msgstr "Postleitzahl"
+
+#: .\fff\forms.py:34
+msgid "bikedonation_form_latest_pickup_placeholder"
+msgstr "Bis wann sollten wir das Rad abholen?"
+
+#: .\fff\forms.py:36
+msgid "bikedonation_form_bike_count_placeholder"
+msgstr "Wieviele Fahrräder?"
+
+#: .\fff\forms.py:38
+msgid "bikedonation_form_message_placeholder"
+msgstr "Deine Nachricht an uns"
+
+#: .\fff\forms.py:44
+msgid "contact_form_name_placeholder"
+msgstr "Vor- und Nachname"
+
+#: .\fff\forms.py:46
+msgid "contact_form_email_placeholder"
+msgstr "Email-Adresse"
+
+#: .\fff\forms.py:49
+msgid "contact_form_phone_placeholder"
+msgstr "Telefonnummer"
+
+#: .\fff\forms.py:52
+msgid "contact_form_message_placeholder"
+msgstr "Deine Nachricht an uns"
+
+#: .\fff\templates\bike_donation.html:28
+msgid "bikedonation_header"
+msgstr "Deine Fahrradspende"
+
+#: .\fff\templates\bike_donation.html:29
+msgid "bikedonation_text"
+msgstr ""
+"Du kannst uns deine Fahrradspende sehr gerne von Montag bis Mittwoch und "
+"Freitags zwischen 16 und 20 Uhr in die Werkstatt in der Lenaustraße 3 "
+"bringen. In unregelmäßigen Abständen holen wir Räder auch bei Euch ab. Bitte "
+"gebt uns dazu eine Vorlauffrist von mindestens 2 Monaten. Wir haben nur "
+"begrenzte Kapazitäten und leider kein eigenes Auto. Hier könnt ihr die "
+"Abholung anmelden:"
+
+#: .\fff\templates\bike_donation.html:65
+msgid "bikedonation_form_submit"
+msgstr "Abholungswunsch eintragen"
+
+#: .\fff\templates\website\segments\club.html:19
+msgid "club_title"
+msgstr "Über Rückenwind"
+
+#: .\fff\templates\website\segments\club.html:23
+msgid "club_text_1"
+msgstr ""
+"Rückenwind e.V. – Wir sind freiwillige Helfer und Geflüchtete, die gemeinsam "
+"in Berlin-Neukölln Fahrräder reparieren. Unser Ziel ist es, Geflüchtete mit "
+"Fahrrädern mobil zu machen, ihnen eine Beschäftigung zu bieten und sie mit "
+"Berlinern zusammenzubringen."
+
+#: .\fff\templates\website\segments\club.html:24
+msgid "club_text_2"
+msgstr ""
+"In unserer Werkstatt in Neukölln schrauben Geflüchtete und Berliner zusammen "
+"an Fahrrädern und lernen sich kennen. Mechanikerwissen oder "
+"Deutschkenntnisse sind nicht erforderlich, bei uns ist jeder willkommen. "
+"Auch über tatkräftige oder finanzielle Unterstützung sowie Sachspenden "
+"freuen wir uns sehr."
+
+#: .\fff\templates\website\segments\contact.html:16
+msgid "contact_title"
+msgstr "Kontakt"
+
+#: .\fff\templates\website\segments\contact.html:28
+msgid "contact_submit"
+msgstr "Abschicken"
+
+#: .\fff\templates\website\segments\fff.html:6
+msgid "fff_title"
+msgstr "Fahrräder für Flüchtlinge"
+
+#: .\fff\templates\website\segments\fff.html:12
+msgid "fff_text_1"
+msgstr ""
+"Es ist ganz einfach: Geflüchtete, die ein Fahrrad brauchen, melden sich bei "
+"uns."
+
+#: .\fff\templates\website\segments\fff.html:13
+msgid "fff_text_2"
+msgstr ""
+"Nach und nach laden wir sie in unsere Werkstatt ein, wo wir ein passendes "
+"Fahrrad von den gespendeten Rädern für sie aussuchen und gemeinsam "
+"reparieren. Hierfür öffnen wir unsere Werkstatt Montag, Dienstag und "
+"Mittwoch von 16 bis 20 Uhr."
+
+#: .\fff\templates\website\segments\fff.html:21
+msgid "fff_needbike_title"
+msgstr "Ich brauche ein Fahrrad."
+
+#: .\fff\templates\website\segments\fff.html:22
+msgid "fff_needbike_text_1"
+msgstr "Wir helfen dir gerne!"
+
+#: .\fff\templates\website\segments\fff.html:23
+msgid "fff_needbike_text_2"
+msgstr ""
+"Bitte trage dich hierzu auf unserer Warteliste ein und wir vereinbaren einen "
+"Termin in unserer Werkstatt. Da viele Geflüchtete auf ein Fahrrad warten, "
+"kann es leider bis zu drei Monate dauern."
+
+#: .\fff\templates\website\segments\fff.html:30
+msgid "fff_support_title"
+msgstr "Ich möchte mitmachen."
+
+#: .\fff\templates\website\segments\fff.html:31
+msgid "fff_support_text_1"
+msgstr ""
+"Du hast Lust und Zeit, mit uns zu Schrauben? Super! Wir freuen uns über "
+"freiwillige Schrauber, die gemeinsam mit uns Fahrräder fit machen möchten. "
+"Erfahrung im Reparieren von Fahrrädern ist ein Plus, aber nicht entscheidend."
+
+#: .\fff\templates\website\segments\fff.html:37
+msgid "fff_bikedonation_title"
+msgstr "Ich möchte ein Fahrrad spenden."
+
+#: .\fff\templates\website\segments\fff.html:38
+msgid "fff_bikedonation_text_1"
+msgstr ""
+"Du kannst uns deine Fahrradspende sehr gerne von Montag bis Mittwoch und "
+"freitags zwischen 16 und 20 Uhr in die Werkstatt in der Lenaustraße 3 "
+"bringen. In unregelmäßigen Abständen holen wir Räder auch bei dir ab."
+
+#: .\fff\templates\website\segments\footer.html:6
+msgid "footer_contact"
+msgstr "Kontakt"
+
+#: .\fff\templates\website\segments\footer.html:7
+msgid "general_address"
+msgstr "Lenaustraße 3, 12047 Berlin"
+
+#: .\fff\templates\website\segments\footer.html:8
+msgid "general_mail"
+msgstr "info@rueckenwind.berlin"
+
+#: .\fff\templates\website\segments\footer.html:9
+msgid "general_phone"
+msgstr "+49(30)6444 8044"
+
+#: .\fff\templates\website\segments\footer.html:10
+msgid "general_webaddress"
+msgstr "www.rueckenwind.berlin"
+
+#: .\fff\templates\website\segments\footer.html:13
+#: .\fff\templates\website\segments\footer.html:14
+msgid "footer_imprint"
+msgstr "Impressum"
+
+#: .\fff\templates\website\segments\footer.html:17
+msgid "footer_keep_contact"
+msgstr "Bleib in Kontakt!"
+
+#: .\fff\templates\website\segments\footer.html:26
+msgid "general_form_email_label"
+msgstr "Email-Adresse"
+
+#: .\fff\templates\website\segments\footer.html:34
+msgid "footer_nl_submit"
+msgstr "Eintragen"
+
+#: .\fff\templates\website\segments\friends.html:6
+msgid "friends_title"
+msgstr "Freunde und Partner"
+
+#: .\fff\templates\website\segments\friends.html:7
+msgid "friends_text"
+msgstr ""
+"Im Laufe der Zeit haben wir mit vielen tollen Leuten zusammengearbeitet, bei "
+"denen wir uns bedanken."
+
+#: .\fff\templates\website\segments\goals.html:17
+msgid "goals_title"
+msgstr "Unsere Ziele"
+
+#: .\fff\templates\website\segments\goals.html:23
+msgid "goals_mobility_title"
+msgstr "Mobilität"
+
+#: .\fff\templates\website\segments\goals.html:24
+msgid "goals_mobility_text"
+msgstr ""
+"Nur wer mobil ist, kann sich einfacher in seiner neuen Umgebung "
+"zurechtfinden, neue Freunde besuchen und dadurch ankommen. Mit einem eigenen "
+"Fahrrad können sich Geflüchtete unabhängig, umweltfreundlich und kostenlos "
+"in Berlin bewegen."
+
+#: .\fff\templates\website\segments\goals.html:29
+msgid "goals_integration_title"
+msgstr "Integration"
+
+#: .\fff\templates\website\segments\goals.html:30
+msgid "goals_integration_text"
+msgstr ""
+"Einfach Fahrräder an Geflüchtete verteilen reicht uns nicht, wir möchten "
+"Berliner und Geflüchtete zusammenbringen. Beim gemeinsamen Schrauben und auf "
+"unseren Veranstaltungen bauen wir Vorurteile ab und schaffen eine Community "
+"rund ums Fahrrad."
+
+#: .\fff\templates\website\segments\goals.html:34
+msgid "goals_sustainability_title"
+msgstr "Nachhaltigkeit"
+
+#: .\fff\templates\website\segments\goals.html:35
+msgid "goals_sustainability_text"
+msgstr ""
+"Unsere Fahrräder sind recycelt, da wir sie aus gebrauchten Ersatzteilen und "
+"Rahmen zusammenbauen. Damit schaffen wir eine nachhaltige Mobilität und "
+"begeistern viele Menschen für das umweltfreundlichste Verkehrsmittel."
+
+#: .\fff\templates\website\segments\history.html:4
+msgid "history_title"
+msgstr "Unsere Geschichte in Bildern"
+
+#: .\fff\templates\website\segments\history.html:25
+msgid "history_1_title"
+msgstr "8. Januar 2015 – Gründung"
+
+#: .\fff\templates\website\segments\history.html:26
+msgid "history_1_text"
+msgstr "7 junge Studierende gründen Rückenwind in ihrer WG-Küche."
+
+#: .\fff\templates\website\segments\history.html:32
+msgid "history_2_title"
+msgstr "21. März 2015 – Erste Fahrradspenden"
+
+#: .\fff\templates\website\segments\history.html:33
+msgid "history_2_text"
+msgstr ""
+"Wir präsentieren unsere Idee auf der Velo und bekommen die ersten 70 "
+"Fahrräder gespendet"
+
+#: .\fff\templates\website\segments\history.html:39
+msgid "history_3_title"
+msgstr "März/April 2015 – Erste Aktionstage"
+
+#: .\fff\templates\website\segments\history.html:40
+msgid "history_3_text"
+msgstr ""
+"Die gespendeten Räder können wir Keller von Über den Tellerrand e.V lagern. "
+"Aber im Hinterhof von HellYes Recycling haben wir Platz gefunden und "
+"reparieren unsere ersten Räder mit Geflüchteten."
+
+#: .\fff\templates\website\segments\history.html:46
+msgid "history_4_title"
+msgstr "11. Juni 2015 – Vierter Aktionstag"
+
+#: .\fff\templates\website\segments\history.html:47
+msgid "history_4_text"
+msgstr ""
+"Wir reparieren 48 Fahrräder und gewinnen 8000 Euro. Mit dem Geld richten wir "
+"unsere Werkstatt im Refugio der Stadtmission in Neukölln ein."
+
+#: .\fff\templates\website\segments\history.html:53
+msgid "history_5_title"
+msgstr "20. September 2015 – Werkstatteröffnung"
+
+#: .\fff\templates\website\segments\history.html:54
+msgid "history_5_text"
+msgstr ""
+"Nach monatelanger Renovierungsarbeit in Eigenregie, Organisieren des "
+"Werkzeugs und der Abläufe eröffnen wir endlich unsere eigene Werkstatt."
+
+#: .\fff\templates\website\segments\history.html:60
+msgid "history_6_title"
+msgstr "19. April 2016 – Auszeichnung"
+
+#: .\fff\templates\website\segments\history.html:61
+msgid "history_6_text"
+msgstr ""
+"Auf der Velo Berlin erhalten wir vom Senator für Umwelt- und "
+"Stadtentwicklung Andreas Geisel den „FahrradStadtBerlin“-Preis."
+
+#: .\fff\templates\website\segments\history.html:67
+msgid "history_7_title"
+msgstr "Winter 2016 – Bundesfreiwilligendienst"
+
+#: .\fff\templates\website\segments\history.html:68
+msgid "history_7_text"
+msgstr ""
+"Unser Verein wird vom Bundesfreiwilligendienst anerkannt und Siamak beginnt "
+"offiziell als Bundesfreiwilligendienstler bei Rückenwind. Er stammt aus dem "
+"Iran und hat uns schon seit einiger Zeit ehrenamtlich unterstützt. Als "
+"Bundesfreiwilligendienstler bekommt Siamak etwas Taschengeld, ein BVG-Ticket "
+"und eine Sozialversicherung."
+
+#: .\fff\templates\website\segments\history.html:74
+msgid "history_8_title"
+msgstr "Mai 2017 – Charity Auktion"
+
+#: .\fff\templates\website\segments\history.html:75
+msgid "history_8_text"
+msgstr ""
+"Wir veranstalten unsere erste Fahrrad Charity-Auktion. 16 Räder werden "
+"versteigert, die unser internationales Team gemeinsam so richtig aufgemotzt "
+"hat. Die 3000 Euro Erlös gehen komplett an den Verein und helfen uns bei "
+"unserer Arbeit."
+
+#: .\fff\templates\website\segments\history.html:81
+msgid "history_9_title"
+msgstr "11. Juni 2017 – Selbsthilfewerkstatt"
+
+#: .\fff\templates\website\segments\history.html:82
+msgid "history_9_text"
+msgstr ""
+"Jetzt öffnen wir auch donnerstags und freitags unsere Tür – und zwar für "
+"alle Berliner! Unser Bundesfreiwilligendienstler aus dem Iran, der schon "
+"fast ein Jahr bei uns ist und so gut wie alles über Fahrräder weiß, sowie "
+"weitere Rückenwind-Schrauber stehen euch zur Seite und helfen euch bei "
+"Bedarf."
+
+#: .\fff\templates\website\segments\landing.html:21
+msgid "landing_needbike_title"
+msgstr "Ich brauche ein Fahrrad."
+
+#: .\fff\templates\website\segments\landing.html:24
+msgid "landing_support_title"
+msgstr "Ich möchte mitmachen."
+
+#: .\fff\templates\website\segments\landing.html:27
+msgid "landing_donatebike_title"
+msgstr "Ich möchte ein Fahrrad spenden."
+
+#: .\fff\templates\website\segments\landing.html:30
+msgid "landing_donate_title"
+msgstr "Ich möchte spenden."
+
+#: .\fff\templates\website\segments\location.html:4
+msgid "location_title"
+msgstr "Hier findest du uns"
+
+#: .\fff\templates\website\segments\navigation.html:20
+msgid "nav_fff"
+msgstr "Fahrräder für Flüchtlinge"
+
+#: .\fff\templates\website\segments\navigation.html:21
+msgid "nav_shw"
+msgstr "Selbsthilfewerkstatt"
+
+#: .\fff\templates\website\segments\navigation.html:22
+msgid "nav_support"
+msgstr "Unterstützen"
+
+#: .\fff\templates\website\segments\navigation.html:26
+msgid "nav_club"
+msgstr "Verein"
+
+#: .\fff\templates\website\segments\navigation.html:28
+msgid "nav_club_aboutus"
+msgstr "Über uns"
+
+#: .\fff\templates\website\segments\navigation.html:29
+msgid "nav_club_team"
+msgstr "Team"
+
+#: .\fff\templates\website\segments\navigation.html:32
+msgid "nav_news"
+msgstr "Neues"
+
+#: .\fff\templates\website\segments\navigation.html:33
+msgid "nav_contact"
+msgstr "Kontakt"
+
+#: .\fff\templates\website\segments\press.html:4
+msgid "press_title"
+msgstr "Was man so über uns schreibt..."
+
+#: .\fff\templates\website\segments\press.html:5
+msgid "press_text"
+msgstr ""
+"Hier findest du eine Auswahl an Berichten und Videos von und über Rückenwind."
+
+#: .\fff\templates\website\segments\shw.html:17
+msgid "shw_title"
+msgstr "Selbsthilfewerkstatt"
+
+#: .\fff\templates\website\segments\shw.html:18
+msgid "shw_text"
+msgstr ""
+"In unserer Selbsthilfewerkstatt lernst du unter Anleitung, dein Fahrrad zu "
+"reparieren. Menschen mit und ohne Fluchterfahrung schrauben bei uns Seite an "
+"Seite."
+
+#: .\fff\templates\website\segments\shw.html:22
+msgid "shw_opening_title"
+msgstr "Öffnungszeiten"
+
+#: .\fff\templates\website\segments\shw.html:23
+msgid "shw_opening_text"
+msgstr ""
+"Jeden Freitag von 16 bis 20 Uhr in unserer Werkstatt in der <a "
+"href='#locationWorkshop' style='color:#74B843; display:inline;'>Lenaustraße "
+"3, 12047 Berlin</a>"
+
+#: .\fff\templates\website\segments\shw.html:28
+msgid "shw_howto_title"
+msgstr "So funktioniert es"
+
+#: .\fff\templates\website\segments\shw.html:29
+msgid "shw_howto_text_1"
+msgstr ""
+"Unter dem Motto Hilfe zur Selbsthilfe unterstützen wir dich bei der "
+"Reparatur deines Fahrrads. Bei etwas schwierigeren Reparaturen helfen dir "
+"von uns ausgebildete Geflüchtete und unsere Schrauber. Wir stellen dir die "
+"benötigten Ersatzteile <a href='../static/download/20170623_Preisliste.pdf' "
+"target='_blank' style='display:inline; color:#74B843'>gegen eine kleine "
+"Gebühr </a> zur Verfügung. Den Großteil unserer Ersatzteile recyceln wir aus "
+"gebrauchten Rädern. Sollte einmal etwas fehlen, ist der nächste Fahrradladen "
+"nicht weit entfernt."
+
+#: .\fff\templates\website\segments\slogan.html:6
+msgid "slogan_title"
+msgstr ""
+"Bei Rückenwind reparieren Berliner und Geflüchtete gemeinsam Fahrräder."
+
+#: .\fff\templates\website\segments\success.html:16
+msgid "success_title"
+msgstr "Das haben wir bisher geschafft"
+
+#: .\fff\templates\website\segments\success.html:21
+msgid "success_bikes"
+msgstr "Fahrräder"
+
+#: .\fff\templates\website\segments\success.html:26
+msgid "success_volunteers"
+msgstr "Freiwillige"
+
+#: .\fff\templates\website\segments\success.html:31
+msgid "success_actiondays"
+msgstr "Aktionstage"
+
+#: .\fff\templates\website\segments\support.html:17
+msgid "support_title"
+msgstr "Unterstütze uns"
+
+#: .\fff\templates\website\segments\support.html:18
+msgid "support_text_3"
+msgstr ""
+"Du möchtest bei uns mitmachen? Du hast noch ein Fahrrad, ein Schloss, "
+"Beleuchtung oder einen Helm übrig? Oder du möchtest uns finanziell "
+"unterstützen? Über tatkräftige Unterstützung freuen wir uns genauso sehr wie "
+"über Sach- und Geldspenden. Hier erfährst du, wie das am besten geht."
+
+#: .\fff\templates\website\segments\support.html:22
+msgid "support_donatebike_title"
+msgstr "Spende ein Fahrrad"
+
+#: .\fff\templates\website\segments\support.html:23
+msgid "support_donatebike_text"
+msgstr ""
+"Du kannst uns deine Fahrradspende sehr gerne von Montag bis Mittwoch und "
+"freitags zwischen 16 und 20 Uhr zur Werkstatt in die Lenaustraße 3 bringen. "
+"In unregelmäßigen Abständen holen wir Räder auch ab. Hier kannst du die "
+"Abholung anmelden."
+
+#: .\fff\templates\website\segments\support.html:25
+msgid "support_donatebike_link"
+msgstr "Spende ein Fahrrad"
+
+#: .\fff\templates\website\segments\support.html:29
+msgid "support_donatemoney_title"
+msgstr "Spende Geld"
+
+#: .\fff\templates\website\segments\support.html:30
+msgid "support_donatemoney_text"
+msgstr ""
+"Um Fahrräder zu reparieren benötigen wir unter anderem Werkzeug und Zubehör. "
+"Das ist leider nicht ganz billig, weshalb wir uns sehr über Geldspenden "
+"freuen."
+
+#: .\fff\templates\website\segments\support.html:32
+msgid "support_donatemoney_link"
+msgstr "Wenn du uns finanziell unterstützen möchtest, klicke einfach hier."
+
+#: .\fff\templates\website\segments\support.html:36
+msgid "support_supportingmember_title"
+msgstr "Werde Fördermitglied"
+
+#: .\fff\templates\website\segments\support.html:37
+msgid "support_supportingmember_text"
+msgstr ""
+"Regelmäßige Spenden helfen uns sehr, unseren Werkstattbetrieb planbar "
+"aufrecht zu erhalten. Entsprechend dankbar sind wir unseren "
+"Fördermitgliedern."
+
+#: .\fff\templates\website\segments\support.html:39
+msgid "support_supportingmember_link"
+msgstr ""
+"Eine Fördermitgliedschaft beginnt bei 60 Euro pro Jahr. Wir freuen uns "
+"natürlich auch über mehr."
+
+#: .\fff\templates\website\segments\support.html:46
+msgid "support_mechanic_title"
+msgstr "Schraub' mit"
+
+#: .\fff\templates\website\segments\support.html:47
+msgid "support_mechanic_text"
+msgstr ""
+"Du hast Lust und Zeit mit uns zu Schrauben? Super!Komm einfach Montags, "
+"Dienstags oder Mittwochs zu unseren Werkstattöffnungszeiten (16-20 Uhr) "
+"vorbei und wir finden etwas für dich."
+
+#: .\fff\templates\website\segments\support.html:49
+msgid "support_mechanic_link"
+msgstr ""
+"Wir organisieren uns über eine Facebookgruppe, der du gerne beitreten kannst."
+
+#: .\fff\templates\website\segments\support.html:54
+msgid "support_team_title"
+msgstr "Werde Teammitglied"
+
+#: .\fff\templates\website\segments\support.html:55
+msgid "support_team_text"
+msgstr ""
+"Events organisieren, Papierkram erledigen, Spendenräder abholen oder deine "
+"eigene Idee verwirklichen..? Bei uns gibt es immer viel zu tun und wir "
+"freuen uns über jeden, der uns hilft. "
+
+#: .\fff\templates\website\segments\support.html:55
+msgid "support_team_link"
+msgstr "Schreib’ uns, wir sind auf dich gespannt!"
+
+#: .\fff\templates\website\segments\support.html:59
+msgid "support_bikehub_title"
+msgstr "Gründe einen Bikehub"
+
+#: .\fff\templates\website\segments\support.html:60
+msgid "support_bikehub_text"
+msgstr ""
+"Unser Keller platzt aus allen Nähten und der Weg zu uns nach Neukölln ist "
+"für viele Fahrradspender zu weit. Unterstütze uns, indem du uns deinen "
+"Keller als Spendensammelraum zur Verfügung stellst."
+
+#: .\fff\templates\website\segments\whatelse.html:4
+msgid "whatelse_title"
+msgstr "Und sonst so"
+
+#: .\fff\templates\website\segments\whatelse.html:5
+msgid "whatelse_text"
+msgstr ""
+"Wir haben das große Ziel, eine Community rund ums Fahrrad aufzubauen. Für "
+"unsere bisherigen Ergebnisse auf dem Weg dorthin sind wir auch schon "
+"ausgezeichnet worden. Um das Ziel zu erreichen, gibt es auch weiterhin viele "
+"integrative Veranstaltungen von und mit uns."
+
+#: .\fff\templates\website\segments\whatelse.html:9
+msgid "whatelse_tours_title"
+msgstr "Fahrradtouren"
+
+#: .\fff\templates\website\segments\whatelse.html:10
+msgid "whatelse_tours_text"
+msgstr ""
+"Ob gemütlich zum Wannsee oder sportlich beim Velothon. Mit dem Fahrrad "
+"fahren macht Spaß und bringt Menschen mit und ohne Fluchterfahrung zusammen."
+
+#: .\fff\templates\website\segments\whatelse.html:14
+msgid "whatelse_events_title"
+msgstr "Events"
+
+#: .\fff\templates\website\segments\whatelse.html:15
+msgid "whatelse_events_text"
+msgstr ""
+"Auf unseren Schrauber-Events, Partys und dem Sommerfest kommen Menschen mit "
+"und ohne Fluchterfahrung zusammen."
+
+#: .\fff\templates\website\segments\whatelse.html:19
+msgid "whatelse_awards_title"
+msgstr "Auszeichnungen"
+
+#: .\fff\templates\website\segments\whatelse.html:20
+msgid "whatelse_awards_text"
+msgstr ""
+"Wir wurden von der Bundeskanzlerin Frau Dr. Merkel und vom Berliner Senat "
+"für unsere Aktivitäten ausgezeichnet."
+
+#: .\fff\views.py:29
+msgid "contact_form_email_subject"
+msgstr "Kontakt"
+
+#: .\fff\views.py:58
+msgid "bikedonation_submit_success_message"
+msgstr ""
+"Vielen Dank! Wir melden uns bei dir sobald die nächste Abholung ansteht."

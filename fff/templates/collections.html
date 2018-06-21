@@ -1,0 +1,8 @@
+{% include 'partials/header.html' %}
+<div id="navigation-spacer"></div>
+<a id="scrollToTopBtn" href="/fff/collection/add"><i class="fa fa-plus"></i></a>
+<div class="container">
+    <div class="alert alert-secondary text-center assigned-workshops">Collections Overview</div>
+{% include 'partials/filterable_table.html' with object_list=object_list %}
+</div>
+{% include 'partials/footer.html' %}

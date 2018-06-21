@@ -1,0 +1,68 @@
+
+
+{% include 'partials/header.html' %}
+{% load static i18n %}
+<div id="navigation-spacer"></div>
+<div id="bike_donation">
+    <div class="container">
+        <form action="{% url 'add_donation' %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="input-group" id="donationName">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.name }}
+                    </div>
+                    <div class="input-group" id="donationMail">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-envelope-open" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.email }}
+                    </div>
+                    <div class="input-group" id="donationPhone">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.phone }}
+                    </div>
+                    <div class="input-group" id="donationStreet">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-home" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.address }}
+                    </div>
+                    <div class="input-group" id="donationZip">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-home" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.zip }}
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-success">{% trans 'bikedonation_form_submit' %}</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="input-group date" id="donationLatestPickup">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.latest_pickup }}
+                    </div>
+                    <div class="input-group" id="donationBikeCount">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-bicycle" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.bike_count }}
+                    </div>
+                    <div class="input-group" id="donationMessage">
+                        {{ bike_donation_form.message }}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% include 'partials/footer.html' %}

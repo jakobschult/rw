@@ -1,0 +1,97 @@
+{% load static i18n %}
+<div id="history" class="history">
+    <div class="container">
+        <h2>{% trans 'history_title' %}</h2>
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{% static 'images/history/1_gruendung.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_1_title' %}</h3>
+                            <p>{% trans 'history_1_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/2_veloberlin.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_2_title' %}</h3>
+                            <p>{% trans 'history_2_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/3_aktionstag1.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_3_title' %}</h3>
+                            <p>{% trans 'history_3_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/4_heldentour.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_4_title' %}</h3>
+                            <p>{% trans 'history_4_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/5_eroeffnung.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_5_title' %}</h3>
+                            <p>{% trans 'history_5_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/6_auszeichnung.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_6_title' %}</h3>
+                            <p>{% trans 'history_6_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/7_bufdi.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_7_title' %}</h3>
+                            <p>{% trans 'history_7_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/8_auktion.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_8_title' %}</h3>
+                            <p>{% trans 'history_8_text' %}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/history/9_shw.jpg' %}">
+                        <div class="carousel-caption">
+                            <h3>{% trans 'history_9_title' %}</h3>
+                            <p>{% trans 'history_9_text' %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

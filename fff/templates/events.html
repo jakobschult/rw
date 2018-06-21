@@ -1,0 +1,36 @@
+{% include 'partials/header.html' %}
+<!-- Scroll To Top Button -->
+<a id="scrollToTopBtn" href="/fff/event/add"><i class="fa fa-plus"></i></a>
+<div id="navigation-spacer"></div>
+
+{% if user.is_authenticated %}
+<div class="">
+    <div class="event_list">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="alert alert-secondary text-center assigned-workshops">Workshop overview</div>
+                {% for event in events %}
+                {% include "events_event.html" with event=event %}
+                {% endfor %}
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="alert alert-secondary text-center assigned-workshops">Past workshops</div>
+                {% for event in past_events %}
+                {% include "events_event.html" with event=event %}
+                {% endfor %}
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+</div>
+
+{% endif %}
+
+{% include 'partials/footer.html' %}

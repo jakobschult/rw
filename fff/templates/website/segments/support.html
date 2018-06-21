@@ -1,0 +1,64 @@
+{% load i18n %}
+<div class="support-picture">
+    <div class="inner">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="support" class="support">
+    <div class="container">
+        <h2>{% trans 'support_title' %}</h2>
+        <p>{% trans 'support_text_3' %}</p>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <i class="fas fa-bicycle " aria-hidden="true"></i>
+                <h4>{% trans 'support_donatebike_title' %}</h4>
+                <p class="justify">{% trans 'support_donatebike_text' %} <a href=''
+                                                                            style='display: inline; color:#74B843;'>
+                    {% trans 'support_donatebike_link' %}</a></p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <i class="fas fa-euro-sign" aria-hidden="true"></i>
+                <h4>{% trans 'support_donatemoney_title' %}</h4>
+                <p class="justify">{% trans 'support_donatemoney_text' %} <a href="{% url 'website_donate' %}"
+                                                                             style='display: inline; color:#74B843;'>
+                    {% trans 'support_donatemoney_link' %}</a></p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <i class="fas fa-handshake" aria-hidden="true"></i>
+                <h4>{% trans 'support_supportingmember_title' %}</h4>
+                <p class="justify">{% trans 'support_supportingmember_text' %} <a href=""
+                                                                                          style="display: inline; color:#74B843;"
+                                                                                          target="_blank"> {% trans 'support_supportingmember_link' %}</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <i class="fas fa-wrench " aria-hidden="true"></i>
+                <h4>{% trans 'support_mechanic_title' %}</h4>
+                <p class="justify">{% trans 'support_mechanic_text' %}
+                    <a href="https://www.facebook.com/groups/889713844447700/"
+                                                      style="display: inline; color:#74B843;" target="_blank">{% trans 'support_mechanic_link' %}</a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <h4>{% trans 'support_team_title' %}</h4>
+                <p class="justify">{% trans 'support_team_text' %}<a href="{% url 'website' %}#contact" style="display: inline; color:#74B843;">{% trans 'support_team_link' %}</a></p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <h4>{% trans 'support_bikehub_title' %}</h4>
+                <p class="justify">{% trans 'support_bikehub_text' %}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="card shadow" id="add-event-form">
+    <div class="card-header" id="card-header">
+        <h5><a href="/fff/event/{{  event.pk }}/">{{ event.date }}</a></h5>
+    </div>
+    <div class="card-body">
+
+        <div class="btn-group btn-group-sm">
+            <a type="button" class="btn btn-success" href="/fff/event/{{  event.pk }}/addorder">Add
+                Order</a>
+            <a type="button" class="btn btn-secondary text-white">Invite All</a>
+            <a type="button" class="btn btn-danger text-white" href="/fff/event/{{  event.pk }}/delete">Delete
+                Event</a>
+        </div>
+        <div class="row" id="event-row">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <div class="well dash-box">
+                    <h2><span class="fas fa-bicycle" title="Bikes to repair"></span> {{ event.get_planned_bikes }}</h2>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="well dash-box">
+                    <h2><span class="fas fa-user" title="Registered volunteers"></span>
+                        {{ event.volunteers.count }}</h2>
+                </div>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+    </div>
+</div>

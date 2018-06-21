@@ -1,0 +1,36 @@
+{% load static i18n %}
+<div id="friends" class="friends">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>{% trans 'friends_title' %}</h2>
+                {% trans 'friends_text' %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <li>
+                    <img src="{% static 'images/friends/scb_logo_frei.png' %}" alt="">
+                </li>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <li>
+                    <img src="{% static 'images/friends/faradgang.png' %}" alt="">
+                </li>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <li>
+                    <a href="https://ueberdentellerrandkochen.de" target="_blank"><img
+                            src="{% static 'images/friends/uedtk.png' %}"
+                            alt=""></a>
+                </li>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <li>
+                    <a href="https://refugio.berlin" target="_blank"><img
+                            src="{% static 'images/friends/refugio.png' %}" alt=""></a>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>

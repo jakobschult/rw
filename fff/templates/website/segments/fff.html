@@ -1,0 +1,43 @@
+{% load i18n %}
+<div id="fff" class="fff">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>{% trans "fff_title" %}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-4"></div>
+            <div class="col-lg-8 col-md-4">
+                <p>{% trans 'fff_text_1' %}
+                    <br>{% trans 'fff_text_2' %}</p>
+            </div>
+            <div class="col-lg-2 col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="packages">
+                    <i class="fas fa-bicycle" aria-hidden="true"></i>
+                    <a href="{% url 'add_order' %}" target="_blank">{% trans "fff_needbike_title" %}</a>
+                    <p>{% trans "fff_needbike_text_1" %}<br>
+                        {% trans "fff_needbike_text_2" %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.25s">
+                <div class="packages">
+                    <i class="fas fa-wrench" aria-hidden="true"></i>
+                    <a href="#support">{% trans 'fff_support_title' %}</a>
+                    <p>{% trans 'fff_support_text_1' %}</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="packages">
+                    <i class="fas fa-gift" aria-hidden="true"></i>
+                    <a href="bikeDonation.php">{% trans 'fff_bikedonation_title' %}</a>
+                    <p>{% trans 'fff_bikedonation_text_1' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

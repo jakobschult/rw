@@ -1,0 +1,47 @@
+{% load i18n %}
+<div id="successMessage">
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li
+                {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+
+<div id="contact" class="contact">
+    <div class="container">
+        <h2>{% trans 'contact_title' %}</h2>
+        {% if contact_form %}
+        <form action="/fff/website" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    {{ contact_form.name }}
+                    {{ contact_form.phone }}
+                    {{ contact_form.email }}
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    {{ contact_form.message }}
+                    <button type="submit" id="submitBtn" class="btn btn-lg">{% trans 'contact_submit' %}</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+
+                </div>
+                <div class="col-lg-6 col-md-6">
+
+                </div>
+            </div>
+        </form>
+        {% endif %}
+    </div>
+</div>

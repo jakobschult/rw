@@ -1,0 +1,36 @@
+{% include 'partials/header.html' %}
+{% load i18n %}
+<div id="navigation-spacer"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card shadow" id="add-event-form">
+                <div class="card-header" id="card-header">
+                    <h5>{% trans 'order_plan_card_header' %}</h5>
+                </div>
+                <div class="card-body">
+                    <form action="{% url 'order_plan' hashed_id=hashed_id %}" method="post">
+                        {% csrf_token %}
+                        <div class="form_row">
+                            <div class="form-group">
+                                <label for="eventSelect">{% trans 'order_plan_label' %}</label>
+                                <select class="form-control" name ="eventSelect" id="eventSelect">
+                                    {% for event in events %}
+                                    <option value="{{ event.pk }}" {% if event.pk == current_event_id %}selected{% endif %}>{{ event.date }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-success">{% trans 'order_plan_submit' %}</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+{% include 'partials/footer.html' %}

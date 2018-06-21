@@ -1,0 +1,92 @@
+{% include 'partials/header.html' %}
+<div id="navigation-spacer"></div>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card shadow" id="add-event-form">
+                <div class="card-header" id="card-header">
+                    <h5>Workshop - {{ event.date }}</h5>
+                </div>
+                <div class="card-body">
+                    <div class="btn-group btn-group-sm">
+                        <a type="button" class="btn btn-success" href="/fff/event/{{  event.pk }}/addorder">Add
+                            Order</a>
+                        <a type="button" class="btn btn-secondary text-white" href="{% url 'event_invite_all' event_id=event.pk %}">Invite All</a>
+                        <a type="button" class="btn btn-danger" href="/fff/event/{{  event.pk }}/delete">Delete
+                            Event</a>
+                    </div>
+                    <div class="row" id="event-row">
+                        <div class="col-2"></div>
+                        <div class="col-4">
+                            <div class="well dash-box">
+                                <h2><i class="fas fa-bicycle"></i> {{ event.get_planned_bikes }}</h2>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="well dash-box">
+                                <h2><i class="fas fa-user"></i> {{ event.volunteers.count }}</h2>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                {% for volunteer in event.volunteers.all %}
+                <div class="event_volunteers">
+                    <span class="fas fa-user "></span> {{ volunteer.username }}
+                </div>
+                {% endfor %}
+
+                {% for order in orders %}
+                <div class="order">
+                    <div class="order-header">
+                        <div class="row">
+                            <div class="col-md-4">
+                                {{ order.name }}
+                            </div>
+                            <div class="col-md-4">
+                                {{ order.date_input }}
+                            </div>
+                            <div class="col-md-4">
+                                {{ order.status }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-body">
+                        <div class="bikes-ordered">
+                            <h2><i class="fas fa-bicycle"></i> {{ order.bikes }}</h2>
+
+                        </div>
+                        <div class="btn-group">
+                            {% if order.status == "PLANNED" %}
+                            <a type="button" class="btn btn" href="/fff/order/{{ order.hashed_id }}/invite"
+                               data-toggle="tooltip"
+                               title="Invite"><i class="fas fa-envelope-open"></i></a>
+                            {% endif %}
+                            {% if order.status == "PLANNED" or order.status == "INVITED" or order.status == "DECLINED" %}
+                            <a type="button" class="btn btn" href="/fff/order/{{ order.hashed_id }}/plan"
+                               data-toggle="tooltip"
+                               title="Reschedule"><i class="fas fa-exchange-alt"></i></a>
+                            {% endif %}
+                            {% if order.status == "CONFIRMED" %}
+                            <a type="button" class="btn btn" href="/fff/order/{{ order.hashed_id }}/fulfill"
+                               data-toggle="tooltip"
+                               title="See Bikes and add bikes"><i class="fas fa-bicycle"></i></a>
+                            {% endif %}
+                            {% if order.status == "PLANNED" or order.status == "DECLINED" %}
+                            <a type="button" class="btn" href="/fff/order/{{ order.hashed_id }}/remove"
+                               data-toggle="tooltip"
+                               title="Remove order from event"><i
+                                    class="fas fa-trash"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col-md-4"></div>
+    </div>
+</div>

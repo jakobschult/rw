@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+{% load static i18n %}
+<head>
+    <title>Rückenwind - Fahrräder für Flüchtlinge</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static '/css/website.css' %}">
+    {% include 'partials/resources.html' %}
+</head>
+
+<body>
+{% include 'partials/scroll_to_top.html' %}
+<!--NAVIGATION BEGIN-->
+{% include 'website/segments/navigation.html' %}
+<!--NAVIGATION END-->
+
+<div id="bike_donation">
+    <div class="container">
+        <div id="map"></div>
+        <h4>{% trans 'bikedonation_header' %}</h4>
+        <p>{% trans 'bikedonation_text' %}</p>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li
+                    {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <form action="{% url 'website_bikedonate' %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="input-group" id="donationName">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.name }}
+                    </div>
+                    <div class="input-group" id="donationMail">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-envelope-open" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.email }}
+                    </div>
+                    <div class="input-group" id="donationPhone">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.phone }}
+                    </div>
+                    <div class="input-group" id="donationStreet">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-home" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.address }}
+                    </div>
+                    <div class="input-group" id="donationZip">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-home" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.zip }}
+                    </div>
+                    <div class="input-group date" id="donationLatestPickup">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.latest_pickup }}
+                    </div>
+                    <div class="input-group" id="donationBikeCount">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-bicycle" aria-hidden="true"></i></div>
+                        </div>
+                        {{ bike_donation_form.bike_count }}
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="input-group" id="donationMessage">
+                        {{ bike_donation_form.message }}
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-success">{% trans 'bikedonation_form_submit' %}</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqGX-4MXal5Pey0KXubD7U1tL32np940I&callback=initMap"></script>
+<script>
+      function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello Jakob!'
+        });
+      }
+
+if(window.attachEvent) {
+    window.attachEvent('onload', initMap());
+} else {
+    if(window.onload) {
+        var curronload = window.onload;
+        var newonload = function(evt) {
+            curronload(evt);
+            yourFunctionName(evt);
+        };
+        window.onload = initMap();
+    } else {
+        window.onload = initMap();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<!-- Footer  -->
+{% include 'website/segments/footer.html' %}
+</body>
+
+</html>

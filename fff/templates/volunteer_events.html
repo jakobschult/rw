@@ -1,0 +1,64 @@
+{% include 'partials/header.html' %}
+<div id="navigation-spacer"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="alert alert-secondary text-center assigned-workshops">Assigned workshops</div>
+            {% for event in volunteer_events %}
+            <div class="card shadow text-center" id="add-event-form">
+                <div class="card-header bg-success text-white" id="card-header">
+                    <h6>{{ event.date }} - I'm going</h6>
+                </div>
+                <div class="card-body ">
+                    {% for volunteer in event.volunteers.all %}
+
+                    <span class="fas fa-user "></span> {{ volunteer.username }}
+                    {% endfor %}
+                    <form action="{% url 'volunteer_events' volunteer_id=volunteer_id %}" method="post">
+                        {% csrf_token %}
+
+
+                        <input type="hidden" value="{{ event.id }}" name="event_id"/>
+                        <input type="hidden" value="remove" name="operation"/>
+                        <input type="submit" class="btn btn-default" value="Sign me out"/>
+
+                    </form>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="alert alert-secondary text-center assigned-workshops">Available workshops for you</div>
+            {% for event in events %}
+            <div class="card shadow text-center" id="add-event-form">
+                <div class="card-header bg-default " id="card-header">
+                    <h6>{{ event.date }} - Not going</h6>
+                </div>
+                <div class="card-body ">
+                    <form action="{% url 'volunteer_events' volunteer_id=volunteer_id %}" method="post">
+                        {% csrf_token %}
+                        {% for volunteer in event.volunteers.all %}
+
+                        <span class="fas fa-user "></span> {{ volunteer.username }}
+                        {% endfor %}
+
+                        <input type="hidden" value="{{ event.id }}" name="event_id"/>
+                        <input type="hidden" value="add" name="operation"/>
+                        <input type="submit" class="btn btn-default" value="I'm going"/>
+                    </form>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+{% include 'partials/footer.html' %}

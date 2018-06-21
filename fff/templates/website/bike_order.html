@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+{% load static i18n %}
+<head>
+    <title>Rückenwind - Fahrräder für Flüchtlinge</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static '/css/website.css' %}">
+    {% include 'partials/resources.html' %}
+</head>
+
+<body>
+{% include 'partials/scroll_to_top.html' %}
+<!--NAVIGATION BEGIN-->
+{% include 'website/segments/navigation.html' %}
+<!--NAVIGATION END-->
+
+<div id="bike_donation">
+    <div class="container">
+        <div id="map"></div>
+        <h4>{% trans 'bikedonation_header' %}</h4>
+        <p>{% trans 'bikedonation_text' %}</p>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li
+                    {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <form action="{% url 'website_order' %}" method="post">
+            {% csrf_token %}
+
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name"/>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <input type="email" class="form-control" name="email" id="email"
+                           placeholder="E-mail"/>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <input type="text" class="form-control" name="phone" id="phone"
+                           placeholder="Phone"/>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <input type="text" class="form-control" name="bikes" id="bikes"
+                           placeholder="How many bikes do you need?"/>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-12">
+                <textarea class="form-control" rows="3" name="note" id="note"
+                          placeholder="Do you have any comments or wishes?"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <button type="submit" class="btn btn-success">I need a bike</button>
+                </div>
+            </div>
+            {% csrf_token %}
+
+        </form>
+    </div>
+</div>
+<!-- Footer  -->
+{% include 'website/segments/footer.html' %}
+</body>
+
+</html>

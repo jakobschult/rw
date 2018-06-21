@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+{% load static %}
+<head>
+    <title>Rückenwind - Fahrräder für Flüchtlinge</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static '/css/website.css' %}">
+    {% include 'partials/resources.html' %}
+</head>
+
+<body>
+{% include 'partials/scroll_to_top.html' %}
+<!--NAVIGATION BEGIN-->
+{% include 'website/segments/navigation.html' %}
+<!--NAVIGATION END-->
+
+<!-- LANDING -->
+{% include 'website/segments/landing.html' with landing_content=landing_content %}
+<!-- LANDING END -->
+
+<!-- SLOGAN -->
+{% include 'website/segments/slogan.html' %}
+<!-- SLOGAN END -->
+<!-- TODO: Öffnungszeiten und wochentage an denen was gemacht wird -->
+
+<!-- FFF -->
+{% include 'website/segments/fff.html' %}
+<!-- FFF END -->
+
+<!-- GOALS -->
+{% include 'website/segments/goals.html' %}
+
+{% include 'website/segments/shw.html' %}
+
+<!-- SUCCESS -->
+{% include 'website/segments/success.html' %}
+<!-- SUCCESS END -->
+
+<!-- SUPPORT -->
+{% include 'website/segments/support.html' %}
+<!-- SUPPORT END -->
+
+<!-- CLUB  -->
+{% include 'website/segments/club.html' %}
+<!-- CLUB END -->
+
+<!-- HISTORY -->
+{% include 'website/segments/history.html' %}
+<!-- HISTORY END -->
+
+<!-- WHAT ELSE -->
+{% include 'website/segments/whatelse.html' %}
+<!-- WHAT ELSE END -->
+
+<!-- TEAM PICTURE -->
+{% include 'website/segments/team_picture.html' %}
+<!-- TEAM PICTURE END-->
+
+<!-- PRESS -->
+{% include 'website/segments/press.html' %}
+<!-- PRESS END -->
+
+{% include 'website/segments/friends.html' %}
+
+{% include 'website/segments/location.html' %}
+
+
+<!-- Contact  -->
+{% include 'website/segments/contact.html' with contact_form=contact_form %}
+
+
+
+<!-- Footer  -->
+{% include 'website/segments/footer.html' %}
+</body>
+
+</html>

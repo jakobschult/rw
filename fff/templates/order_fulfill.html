@@ -1,0 +1,75 @@
+{% include 'partials/header.html' %}
+<div id="navigation-spacer"></div>
+{% if order.status != "FULFILLED" %}
+<div class="container top_fixed_nav_fix">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card shadow text-center" id="add-event-form">
+                <div class="card-header" id="card-header">
+                    <h5>Add Bike to {{order.name}}'s Order ({{ order.bikes }} bike(s))</h5>
+                </div>
+                <div class="card-body">
+                    <form action="{% url 'order_fulfill' hashed_id=order.hashed_id %}" method="post">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" name="bike_manufacturer" id="bike_manufacturer"
+                                       placeholder="Bike manufacturer"/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" name="bike_frame_number" id="bike_frame_number"
+                                       placeholder="Bike framenumber"/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" name="bike_color" id="bike_color"
+                                       placeholder="Bike color"/>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add bike to order</button>
+                        {% csrf_token %}
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+{% endif %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="alert alert-secondary text-center assigned-workshops">Bikes</div>
+            {% for bike in bikes %}
+            <div class="card shadow text-center">
+                <div class="card-header bg-default text-center">
+                    <h4><i class="fas fa-bicycle"></i></h4>
+                </div>
+                <div class="card-body">
+                    <div class="btn-group">
+                        <a type="button" class="btn btn-success" href="#">Certificate</a>
+                        <a type="button" class="btn btn-secondary text-white">Edit</a>
+                        <a type="button" class="btn btn-danger" href="/fff/bike/{{ bike.pk }}/remove">Delete</a>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">{{ bike.manufacturer }}</li>
+                        <li class="list-group-item">{{ bike.frame_number }}</li>
+                        <li class="list-group-item">{{ bike.color }}</li>
+                    </ul>
+
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+
+{% include 'partials/footer.html' %}
